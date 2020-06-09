@@ -1,0 +1,924 @@
+@font-face {
+    font-family: futura-bk-bt-book-italic;
+    src: url(../font/futura-bk-bt-book-italic.ttf);
+}
+
+@font-face {
+    font-family: futura-bold-bt;
+    src: url(../font/futura-bold-bt.ttf);
+}
+
+@font-face {
+    font-family: futura-bold-italic-bt;
+    src: url(../font/futura-bold-italic-bt.ttf);
+}
+
+@font-face {
+    font-family: futura-book-bt-22240;
+    src: url(../font/futura-book-bt-22240.ttf);
+}
+
+@font-face {
+    font-family: futurabq-medium;
+    src: url(../font/futurabq-medium.otf);
+}
+
+@font-face {
+    font-family: futura-condensed-bold;
+    src: url(../font/futura-condensed-bold.ttf);
+}
+
+@font-face {
+    font-family: futura-condensed-bolditalic;
+    src: url(../font/futura-condensed-bolditalic.ttf);
+}
+
+@font-face {
+    font-family: futura-extra-black-bt;
+    src: url(../font/futura-extra-black-bt.ttf);
+}
+
+@font-face {
+    font-family: futura-extra-black-condensed-bt;
+    src: url(../font/futura-extra-black-condensed-bt.ttf);
+}
+
+@font-face {
+    font-family: futura-heavy-italic-bt;
+    src: url(../font/futura-heavy-italic-bt.ttf);
+}
+
+@font-face {
+    font-family: futura-hv-bt-heavy;
+    src: url(../font/futura-hv-bt-heavy.ttf);
+}
+
+@font-face {
+    font-family: futura-light-bt;
+    src: url(../font/futura-light-bt.ttf);
+}
+
+@font-face {
+    font-family: futura-light-condensed-bt;
+    src: url(../font/futura-light-condensed-bt.ttf);
+}
+
+@font-face {
+    font-family: futuralightctt-normal;
+    src: url(../font/futuralightctt-normal.ttf);
+}
+
+@font-face {
+    font-family: futura-light-italic-bt;
+    src: url(../font/futura-light-italic-bt.ttf);
+}
+
+@font-face {
+    font-family: futura-md-bt-medium;
+    src: url(../font/futura-md-bt-medium.ttf);
+}
+
+@font-face {
+    font-family: futura-md-bt-medium-italic;
+    src: url(../font/futura-md-bt-medium-italic.ttf);
+}
+
+@font-face {
+    font-family: futura-medium-condensed-bt;
+    src: url(../font/futura-medium-condensed-bt.ttf);
+}
+
+@font-face {
+    font-family: futura-xblkcnit-bt-extra-black-italic;
+    src: url(../font/futura-xblkcnit-bt-extra-black-italic.ttf);
+}
+
+@font-face {
+    font-family: futura-xblkit-bt-extra-black-italic;
+    src: url(../font/futura-xblkit-bt-extra-black-italic.ttf);
+}
+
+
+
+
+.load__none {
+    display: none;
+    color: #fff;
+}
+
+.load {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999999;
+}
+
+
+
+
+/*---------------------Scrolling Bar-------------------------------------*/
+
+.scrollbar-dusty-grass::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-linear-gradient(330deg, #0c6eaf 0%, #0c6eaf 100%);
+    background-image: linear-gradient(120deg, #0c6eaf 0%, #0c6eaf 100%);
+}
+
+.thin::-webkit-scrollbar {
+    width: 6px;
+}
+
+.example-1 {
+    position: relative;
+    overflow-y: scroll;
+    height: 200px;
+}
+
+
+/*------------------Floating----------------*/
+
+#scroll {
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    text-indent: -9999px;
+    display: none;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 6px;
+    border: 1px solid #2152e3;
+}
+
+#scroll span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #2152e3;
+}
+
+#scroll:hover {
+    background-color: transparent;
+    border-color: #2152e3;
+    transition: 0.25s ease;
+    opacity: 1;
+    filter: "alpha(opacity=100)";
+    -ms-filter: "alpha(opacity=100)";
+}
+
+#scroll:hover span {
+    border-bottom-color: #2152e3;
+    transition: 0.25s ease;
+}
+
+.Header {background: #1944ac;padding: 7px 0px; box-shadow: unset}
+Header .Button {margin-right: 20px;}
+Header .Button a:hover{outline: none;text-decoration: none}
+Header .Button a { color: #ff9c00;font-family: futurabq-medium;font-weight: 400;font-size: 18px;
+    letter-spacing: 0px;
+    font-style: normal;border-right: 1px solid #fff;padding: 0px 15px;}
+.Header .Social ul{padding: 0;margin: 0;}
+
+.Header .Social ul li a i{color: #1944ac}
+.Header .Social ul li:hover a i{color: #fff;transition: 0.8s all}
+.Header .Social ul li:hover{background: #1944ac;border: 1px solid #fff;transition: 0.8s all}
+.Header .Social ul li{height: 30px;margin: 0px 10px;border: 1px solid #1944ac;
+    width: 30px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;}
+
+header {
+   box-shadow: 0 1px 6px rgba(57,73,76,.35);
+    background: #fff;
+    transition: all .5s;
+    z-index: 999;
+
+
+}
+.Header .Left a:hover{outline: none;text-decoration: none}
+.Header .Left a{
+color: #fff;
+    font-family: futurabq-medium;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-style: normal;
+    
+    padding: 0px 15px;}
+.Header .Right{display: flex;
+    align-items: center;
+    justify-content: flex-end;}
+header .HeaderTop{display: flex;align-items: center;justify-content: space-between;}
+header .Social ul{display: flex;align-items: center;justify-content: center;list-style-type: none}
+
+header .nav .ul li:last-child a:hover {
+    background-color: unset !important
+}
+
+header .nav .ul li a:hover {
+    background-color: #f2f2f2 !important;
+    transition: 0.8s all;
+    color: #1944ac;
+    outline: none;
+    text-decoration: none
+}
+
+header .nav .ul {
+    padding: 0;
+    margin-bottom: 0px;
+    list-style-type: none
+}
+
+header .nav .ul li:first-child {
+    border: none
+}
+
+header .nav .ul li {
+    padding: 0px 2px;
+    border-left: 1px solid #d5d5d5;
+}
+
+
+
+header .nav .ul li a {
+    padding: 15px;
+    font-family: futurabq-medium;
+    color: #000000;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-style: normal;
+}
+
+header .nav {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+header .Logo img {
+    max-height: 122px;
+}
+
+.header-scrolled {
+    background: #fff;
+    transition: all .5s;
+    box-shadow: 0 1px 6px rgba(57, 73, 76, .35);
+}
+
+
+.Banner{background: #1944ac;padding: 50px 0 130px;}
+.Banner h1{font-size: 40px;text-transform: uppercase;line-height: 1.2;font-weight: 400;letter-spacing: 1px;
+    font-style: normal;color: #ffffff;margin: 0;
+    padding: 0;font-family:futura-light-condensed-bt}
+
+.Main{padding-bottom: 80px;}
+
+.Main .MainInner{background: #fff;
+    padding: 30px;box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.12);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: -80px;
+    margin-bottom: 0px;
+    }
+
+
+.Main .MainInner p, .Main .MainInner ul li{font-family: futurabq-medium;
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-style: normal;}
+.Main .MainInner ul li a{color: #1944ac}
+.Main .MainInner h1:after{content: '';position: absolute;left: 0;width: 31%;height: 2px;background:#1944ac;top: 0;bottom: 0;margin: auto;}
+.Main .MainInner h1:before{content: '';position: absolute;right: 0;width: 31%;height: 2px;background:#1944ac;top: 0;bottom: 0;margin: auto;}
+.Main .MainInner h1{
+    position: relative;
+font-size: 40px;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-style: normal;
+    color: #1944ac;
+    margin: 0;
+    padding: 0;
+    font-family: futura-light-condensed-bt;}
+.Main{background-color: #f2f2f2;}
+
+footer {
+    padding: 60px 0px;
+    background: #222;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+footer h5 {
+    font-family: futura-light-condensed-bt;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    padding: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+footer .FooterUl li{position: relative}
+footer .FooterUl li:after{content: '';background: #fff;height: 5px;width: 5px;border-radius: 50%;position: absolute;left: 0;margin: auto;top: 0;bottom: 0;}
+footer li {
+    color: #fff;
+    font-family: futura-light-condensed-bt;
+    font-weight: 400;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+footer ul li {
+    padding-left: 25px;
+    position: relative;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    border-right: 0 !important;
+}
+
+footer .Social li:last-child {
+    border-right: 0.5px solid #777 !important
+}
+
+footer ul li i {
+    position: absolute !important;
+    left: 0;
+    top: 5px;
+    bottom: 0;
+    font-size: 14px !important;
+    color: #fff
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+}
+
+footer ul li a {
+    color: #fff;
+    font-family: futura-light-condensed-bt;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+footer .Social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 275px;
+}
+
+footer .Social li i {
+    position: unset !important
+}
+
+footer .Social li {
+    padding: 0;
+    padding: 18px;
+    border: 0.5px solid #777;
+}
+
+footer .Social li:first-child {
+    margin-left: 0;
+}
+
+footer .Copyright {
+    text-align: center;
+}
+
+footer .Customerow {
+    margin-top: 30px;
+}
+
+footer .Copyright a, .text-muted {
+    color: #fff;
+    font-family: futura-light-condensed-bt;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+footer .Social li i {
+    font-size: 22px !important;
+    transform: scale(1.0)
+}
+
+footer .Social .facebook:hover {
+    background: #3b5998;
+    transition: 0.8s all;
+}
+
+footer .Social .instagram:hover {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    transition: 0.8s all;
+}
+
+footer .Social .youtube:hover {
+    background: #c4302b;
+    transition: 0.8s all;
+}
+
+footer .Social .linkedin:hover {
+    background: #0e76a8;
+    transition: 0.8s all;
+}
+
+footer .Social .twitter:hover {
+    background: #00acee;
+    transition: 0.8s all;
+}
+
+footer .Social li:hover i {
+    color: #fff;
+    transform: scale(1.3);
+    transition: 0.8s all;
+}
+
+.AccordionSet{margin-top: 40px;}
+
+.accordion {
+    
+  background-color: #eee;
+  color: #1944ac;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    background: #fff;
+    font-family: futurabq-medium;
+    
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-style: normal;
+    transition: 0.8s all
+}
+
+.active, .accordion:hover {
+  background-color: #1944ac;
+    color: #fff;
+    transition: 0.8s all
+}
+
+.accordion:after {
+  content: '\002B';
+    transition: 0.8s all;
+  color: #1944ac;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+    
+}
+
+.accordion:focus{
+outline: none;
+    box-shadow: none;
+    border: none;}
+
+
+.accordion:hover:after {
+  content: '\002B';
+    transition: 0.8s all;
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+    color: #fff!important;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide {border: 1px solid #ddd;padding: 10px;}
+.swiper-slide:hover img{transform: scale(1.1);transition: 0.8s all}
+.swiper-slide img{max-width: 100%;}
+
+.swiper-wrapper{transform: translate3d(0px, 0px, 0px)!important;}
+
+.Partner{padding: 50px 0px}
+.Partner .PartnerTitle h1{font-size: 40px;text-transform: uppercase;line-height: 1.2;font-weight: 400;letter-spacing: 1px;
+    font-style: normal;color: #1944ac;margin-bottom: 0px;text-align: center;
+    padding: 0;font-family:futura-light-condensed-bt}
+.Partner .PartnerTitle h1:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 2px;
+    background: #1944ac;
+    top: 0;
+    bottom: 0;
+    margin: auto;}
+.Partner .PartnerTitle{margin-bottom: 50px;}
+
+.Partner .PartnerTitle h1:after{content: '';
+    position: absolute;
+    left: 0;
+    width: 40%;
+    height: 2px;
+    background: #1944ac;
+    top: 0;
+    bottom: 0;
+    margin: auto;}
+.Footer{
+background: #000;
+    padding: 20px 0px;}
+.JoinUs:focus{outline: none;box-shadow: none;text-decoration: none}
+.JoinUs{
+    text-transform: uppercase;font-weight: 800;letter-spacing: 1px;font-size: 18px;
+    font-family:futura-light-condensed-bt;
+margin-bottom: 30px;margin-top: 10px;
+height: unset;
+    background: #4CAF50;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #4CAF50;
+    letter-spacing: 2px;
+width: 10%;
+    
+    text-align: center;
+    display: block;}
+
+form label{width: 100%;color: #1944ac;font-family: futurabq-medium;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-style: normal;height: 25px;
+margin: 0;}
+
+form input{height: 20px;width: 100%;border: none;border-bottom: 0.5px solid #000;outline: none;box-shadow: none;transition: 0.8s all;letter-spacing: 2px;font-family: futurabq-medium;
+    font-weight: 400;font-style: normal;}
+form input:focus{border-color: #1944ac;transition: 0.8s all}
+
+.modal-title{font-family: futurabq-medium;text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-style: normal;}
+
+.close:focus{outline: none;border: none;box-shadow: none;}
+
+form .form-group{margin-bottom: 25px;}
+
+
+
+.breadcrumb {
+	/*centering*/
+	display: inline-block;
+	background-color:unset!important;
+	overflow: hidden;
+	border-radius: 5px;
+    padding: 0!important;
+	/*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+	counter-reset: flag; 
+}
+
+.breadcrumb a {
+	text-decoration: none;
+	outline: none;
+	display: block;
+	float: left;
+	font-size: 12px;
+	line-height: 36px;
+	color: white;
+	/*need more margin on the left of links to accomodate the numbers*/
+	padding: 0 25px 0 60px;
+	background: #666;
+	background: linear-gradient(#666, #333);
+	position: relative;
+}
+/*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+.breadcrumb a:first-child {
+	padding-left: 46px;
+	border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
+}
+.breadcrumb a:first-child:before {
+	left: 14px;
+    
+}
+.breadcrumb a:last-child {
+	border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
+	padding-right: 20px;
+}
+
+/*hover/active styles*/
+.breadcrumb a.active, .breadcrumb a:hover{
+	background: #333;
+	background: linear-gradient(#333, #000);
+}
+.breadcrumb a.active:after, .breadcrumb a:hover:after {
+	background: #333;
+	background: linear-gradient(135deg, #333, #000);
+}
+
+/*adding the arrows for the breadcrumbs using rotated pseudo elements*/
+.breadcrumb a:after {
+	content: '';
+	position: absolute;
+	top: 0; 
+	right: -18px; /*half of square's length*/
+	/*same dimension as the line-height of .breadcrumb a */
+	width: 36px; 
+	height: 36px;
+	/*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
+	length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+	if diagonal required = 1; length = 1/1.414 = 0.707*/
+	transform: scale(0.707) rotate(45deg);
+	/*we need to prevent the arrows from getting buried under the next link*/
+	z-index: 1;
+	/*background same as links but the gradient will be rotated to compensate with the transform applied*/
+	background: #666;
+	background: linear-gradient(135deg, #666, #333);
+	/*stylish arrow design using box shadow*/
+	box-shadow: 
+		2px -2px 0 2px rgba(0, 0, 0, 0.4), 
+		3px -3px 0 2px rgba(255, 255, 255, 0.1);
+	/*
+		5px - for rounded arrows and 
+		50px - to prevent hover glitches on the border created using shadows*/
+	border-radius: 0 5px 0 50px;
+}
+/*we dont need an arrow after the last link*/
+.breadcrumb a:last-child:after {
+	content: none;
+}
+
+.breadcrumb a.active, .breadcrumb a:hover{color: #fff;outline: none;text-decoration: none}
+/*we will use the :before element to show numbers*/
+.breadcrumb a:before {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	content: counter(flag);
+	counter-increment: flag;
+	/*some styles now*/
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin: 8px 0;
+	position: absolute;
+	top: 0;
+	left: 30px;
+	background: #444;
+	background: linear-gradient(#444, #222);
+	font-weight: bold;
+}
+
+
+.flat a, .flat a:after {
+	background: white;
+	color: black;
+	transition: all 0.5s;
+}
+.flat a:before {
+	background: white;
+	box-shadow: 0 0 0 1px #ccc;
+}
+.flat a:hover, .flat a.active, 
+.flat a:hover:after, .flat a.active:after{
+	background: #9EEB62;
+}
+
+
+ .MemberType ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+	overflow: auto;
+}
+
+.MemberType ul li{
+  color: #AAAAAA;
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  
+	
+}
+
+.MemberType ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+
+.MemberType h2{font-weight: 400;
+  font-family: futurabq-medium;
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-style: normal;}
+
+.MemberType ul li label span{font-family:  futura-light-bt;}
+
+.MemberType ul li label{
+  display: block;
+  position: relative;
+  font-weight: 400;
+  font-family: futurabq-medium;
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-style: normal;
+ margin-bottom: 0px;
+  padding-left: 30px;
+  
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+
+
+.MemberType ul li .check{
+  display: block;
+  position: absolute;
+  border: 2px solid #000;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  top: 0px;
+    bottom: 0;
+    margin: auto;
+  left: 0px;
+	z-index: 5;
+	transition: border .25s linear;
+	-webkit-transition: border .25s linear;
+}
+
+
+
+.MemberType ul li .check::before {
+  display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.MemberType input[type=radio]:checked ~ .check {
+  border: 2px solid #1944ac;
+}
+
+.MemberType input[type=radio]:checked ~ .check::before{
+  background: #1944ac;
+}
+
+.MemberType input[type=radio]:checked ~ label{
+  color: #1944ac;
+}
+
+.signature {
+	margin: 10px auto;
+	padding: 10px 0;
+	width: 100%;
+}
+
+.signature p{
+	text-align: center;
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 0.85em;
+	color: #AAAAAA;
+}
+
+.signature .much-heart{
+	display: inline-block;
+	position: relative;
+	margin: 0 4px;
+	height: 10px;
+	width: 10px;
+	background: #AC1D3F;
+	border-radius: 4px;
+	-ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.signature .much-heart::before, 
+.signature .much-heart::after {
+	  display: block;
+  content: '';
+  position: absolute;
+  margin: auto;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: #AC1D3F;
+  top: -4px;
+}
+
+.signature .much-heart::after {
+	bottom: 0;
+	top: auto;
+	left: -4px;
+}
+
+.signature a {
+	color: #AAAAAA;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.MemberType ul li{margin: 5px 0px;}
+.MemberType{margin: 30px 0px}
+.breadcrumb{margin: 30px 0px}
+
+.MemberType select:focus{outline: none;box-shadow: none;border: 0.5px solid #000}
+.MemberType select option {font-family:  futura-light-bt;}
+
+.Light{font-family: futura-light-bt;color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-style: normal;margin-top: 10px;display: block}
+
